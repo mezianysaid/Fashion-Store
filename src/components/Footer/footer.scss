@@ -1,0 +1,19 @@
+@import "../styles/_variables";
+.footer {
+  padding: 20px;
+  background-color: $footer-color;
+  color: $primary-color;
+  text-align: center;
+  .footerwrapper {
+    color: $primary-color;
+    font-family: $font-family;
+    .footerAbout {
+      color: $primary-color;
+      font-family: $font-family;
+    }
+    .footerStyle {
+      color: $primary-color;
+      font-family: $font-family;
+    }
+  }
+}

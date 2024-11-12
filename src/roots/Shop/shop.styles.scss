@@ -1,0 +1,26 @@
+@import "../../components/styles/variables";
+
+.Shopsubtitle {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  .subnavbar {
+    margin-top: 1px;
+    width: 40%;
+    border-bottom-left-radius: 100px;
+    ._toolbar {
+      display: flex;
+      justify-content: flex-end;
+      .link {
+        font-family: $font-family;
+        font-weight: 600;
+        margin: 10px;
+        &:hover {
+          color: $footer-color;
+          text-decoration-color: $footer-color;
+          text-decoration-thickness: 3px;
+        }
+      }
+    }
+  }
+}

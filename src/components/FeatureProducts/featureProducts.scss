@@ -1,0 +1,52 @@
+@import "../styles/_variables";
+
+$card-bg: #fff;
+$card-shadow: rgba(0, 0, 0, 0.1);
+$hover-shadow: rgba(0, 0, 0, 0.2);
+$transition-duration: 0.4s;
+$hover-scale: 1.05;
+
+.featured-products {
+  padding: 40px 10px;
+  background-color: $primary-color;
+  font-family: $font-family;
+  .product-card {
+    text-align: center;
+    font-family: $font-family;
+    background-color: $card-bg;
+    border-radius: 0px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px $card-shadow;
+    transition: transform background-size $transition-duration ease,
+      box-shadow $transition-duration ease;
+    transform-origin: center;
+
+    &:hover {
+      transform: scale($hover-scale);
+      box-shadow: 0 6px 12px $hover-shadow;
+      background-size: transform scale(1.1);
+    }
+
+    .cardContent {
+      display: block;
+      align-items: center;
+      bottom: 0%;
+      padding: 1rem;
+      text-align: center;
+
+      .product-title {
+        font-size: 1.2rem;
+        color: $primary-color;
+        font-family: $font-family;
+      }
+      .btnBuy {
+        color: $primary-color;
+        font-family: $font-family;
+        border-color: $primary-color;
+      }
+    }
+  }
+  .productWrapperTitle {
+    font-family: $font-family;
+  }
+}
